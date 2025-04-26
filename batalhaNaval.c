@@ -35,6 +35,30 @@ int main() {
     // 0 0 1 0 0
     // 1 1 1 1 1
     // 0 0 1 0 0
-
+    // Tabuleiro 10x10 inicializado com 0 (água)
+    int tabuleiro[10][10] = {0};
+    
+    // Navio horizontal (linha 2, colunas 3-5)
+    tabuleiro[2][3] = 3;
+    tabuleiro[2][4] = 3;
+    tabuleiro[2][5] = 3;
+    
+    // Navio vertical (coluna 7, linhas 5-7)
+    tabuleiro[5][7] = 3;
+    tabuleiro[6][7] = 3;
+    tabuleiro[7][7] = 3;
+    
+    // Imprimindo o tabuleiro
+    printf("Tabuleiro Batalha Naval:\n\n");
+    printf("   A B C D E F G H I J\n"); // Cabeçalho das colunas
+    
+    for (int linha = 0; linha < 10; linha++) {
+        printf("%2d ", linha + 1); // Número da linha (1-10)
+        
+        for (int coluna = 0; coluna < 10; coluna++) {
+            printf("%d ", tabuleiro[linha][coluna]);
+        }
+        printf("\n");
+    }
     return 0;
 }
