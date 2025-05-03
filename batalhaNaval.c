@@ -47,6 +47,17 @@ int main() {
     tabuleiro[5][7] = 3;
     tabuleiro[6][7] = 3;
     tabuleiro[7][7] = 3;
+
+    // 1° Navio diagonal
+    tabuleiro[7][2] = 3;
+    tabuleiro[8][1] = 3;
+    tabuleiro[9][0] = 3;
+    // 2° Navio diagonal
+    tabuleiro[0][9] = 3;
+    tabuleiro[1][8] = 3;
+    tabuleiro[2][7] = 3;
+
+
     
     // Imprimindo o tabuleiro
     printf("Tabuleiro Batalha Naval:\n\n");
